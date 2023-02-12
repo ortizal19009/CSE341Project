@@ -29,3 +29,75 @@ Content-Type: application/json
     "name": "Back end development 2",
     "tutor": "Nathan Birch"
   }
+###
+PUT http://localhost:3000/courses/63dea47bd27b9ad5108b1a65 HTTP/1.1
+Content-Type: application/json
+
+  {
+    "code": "CSE-340",
+    "name": "Back end development 2",
+    "tutor": "Nathan Birch"
+  }
+###
+DELETE http://localhost:3000/courses/63e875ba4ca25be4b2e24023 HTTP/1.1
+
+
+###
+GET http://localhost:3000/student HTTP/1.1
+###
+GET http://localhost:3000/student/63dea512d27b9ad5108b1a66 HTTP/1.1
+###
+POST http://localhost:3000/student HTTP/1.1
+Content-Type: application/json
+
+  {
+  "name": "Alexis Ortiz",
+  "country": "Ecuador",
+  "email": "alexis.ortiz19@outlook.com",
+  "age": 30,
+  "class": "63dea47bd27b9ad5108b1a65",
+  "city": "Tulcan",
+  "phone": "0985096366"
+  }
+###
+POST http://localhost:3000/student HTTP/1.1
+Content-Type: application/json
+
+  {
+  "name": "Alexis Ortiz",
+  "country": "",
+  "email": "alexis.ortiz19@outlook.com",
+  "age": 30,
+  "class": "63dea47bd27b9ad5108b1a65",
+  "city": "Tulcan",
+  "phone": "0985096366"
+  }
+
+###
+PUT http://localhost:3000/student/63e882019175a33d6f2f05fc HTTP/1.1
+Content-Type: application/json
+
+  {
+  "name": "Alexis Ortiz",
+  "country": "Ibarra",
+  "email": "alexis.ortiz19@outlook.com",
+  "age": 30,
+  "class": "63dea47bd27b9ad5108b1a65",
+  "city": "Tulcan",
+  "phone": "0985096366"
+  }
+###
+PUT http://localhost:3000/student/63dea47bd27b9ad5108b1a65 HTTP/1.1
+Content-Type: application/json
+
+  {
+  "name": "Alexis Ortiz",
+  "country": "",
+  "email": "alexis.ortiz19@outlook.com",
+  "age": 30,
+  "class": "63dea47bd27b9ad5108b1a65",
+  "city": "Tulcan",
+  "phone": "0985096366"
+  }
+###
+DELETE http://localhost:3000/student/63e882019175a33d6f2f05fc HTTP/1.1
